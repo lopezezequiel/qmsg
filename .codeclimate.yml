@@ -1,0 +1,21 @@
+engines:
+  pep8:
+    enabled: true
+  eslint:
+    enabled: true
+  csslint:
+    enabled: true
+  radon: 
+    enabled: true
+    config: 
+      python_version: 2
+      threshold: "B"
+
+ratings:
+  paths:
+    - "apirestv1/**.py"
+
+exclude_paths:
+- "qmsg/"
+- "static/"
+- "scripts/"
