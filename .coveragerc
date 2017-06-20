@@ -3,4 +3,8 @@ omit =
     */python?.?/*
     */python?.?-dev/*
     */site-packages/nose/*
-    /apirestv1/apps.py
+    */__init__.py
+    apirestv1/apps.py
+    apirestv1/admin.py
+    apirestv1/migrations/*
+    apirestv1/test*

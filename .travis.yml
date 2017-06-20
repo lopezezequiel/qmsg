@@ -41,8 +41,7 @@ script:
 - pep8 --exclude=migrations apirestv1/
 - pyflakes apirestv1/
 - radon cc apirestv1/ --min A --exclude "apirestv1/migrations/*" --show-complexity
-- coverage run --source=apirestv1 manage.py test
-- coverage report --omit=apirestv1/tests_*
+- coverage run --source=apirestv1 --omit=test* manage.py test
 
 after_success:
 - coveralls
