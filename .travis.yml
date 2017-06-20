@@ -40,6 +40,7 @@ script:
 - pyflakes apirestv1/
 - radon cc apirestv1/ --min A --exclude "apirestv1/migrations/*" --show-complexity
 - coverage run --source=apirestv1 manage.py test
+- coverage report --omit=apirestv1/tests_*
 
 after_success:
 - coveralls
