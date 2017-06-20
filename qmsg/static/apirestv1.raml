@@ -1,0 +1,12 @@
+#%RAML 0.8
+  ---
+  title: qmsg API
+  baseUri: http://qmsg.herokuapp.com/api-rest/{version}
+  version: v1
+
+  /messages:
+    post:
+      description: Guarda un mensaje
+    /{id}:
+      get:
+        description: Retorna un mensaje
