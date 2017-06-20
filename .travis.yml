@@ -27,7 +27,7 @@ env:
 
 install:
 - pip install -r requirements.txt
-- pip install codeclimate-test-reporter
+- pip install codeclimate-test-reporter --file .coverage
 
 before_script:
 - "./scripts/create_database.sh"
