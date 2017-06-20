@@ -9,7 +9,7 @@ engines:
     enabled: true
     config: 
       python_version: 2
-      threshold: "B"
+      threshold: "A"
 
 ratings:
   paths:
@@ -19,3 +19,4 @@ exclude_paths:
 - "qmsg/"
 - "static/"
 - "scripts/"
+- "docs/"
