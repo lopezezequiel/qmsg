@@ -1,0 +1,153 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Tests &#8212; documentación de qmsg - 1.0</title>
+    
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="index" title="Índice" href="../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../search.html" />
+    <link rel="next" title="Views" href="views.html" />
+    <link rel="prev" title="Welcome to qmsg’s documentation!" href="../index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="tests">
+<h1>Tests<a class="headerlink" href="#tests" title="Enlazar permanentemente con este título">¶</a></h1>
+<dl class="class">
+<dt id="apirestv1.tests.MessageTestCase">
+<em class="property">class </em><code class="descclassname">apirestv1.tests.</code><code class="descname">MessageTestCase</code><a class="headerlink" href="#apirestv1.tests.MessageTestCase" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><dl class="method">
+<dt id="apirestv1.tests.MessageTestCase.test_MITM">
+<code class="descname">test_MITM</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#apirestv1.tests.MessageTestCase.test_MITM" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Prueba que no se pueda setear el id de un mensaje a traves de
+la api rest</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="apirestv1.tests.MessageTestCase.test_bad_request">
+<code class="descname">test_bad_request</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#apirestv1.tests.MessageTestCase.test_bad_request" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Prueba que devuelva un http 400 si se envían datos inválidos</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="apirestv1.tests.MessageTestCase.test_collisions">
+<code class="descname">test_collisions</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#apirestv1.tests.MessageTestCase.test_collisions" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Valida que no haya colisiones entre ids autogenerados de
+mensajes que se crean en un corto periodo de tiempo</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="apirestv1.tests.MessageTestCase.test_id">
+<code class="descname">test_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#apirestv1.tests.MessageTestCase.test_id" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Valida que se genere un id válido cuando se crea un mensaje.
+formato válido: 8 caracteres hexadecimales.
+regexp: ^[0-9a-f]{8}$</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="apirestv1.tests.MessageTestCase.test_message_params">
+<code class="descname">test_message_params</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#apirestv1.tests.MessageTestCase.test_message_params" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Prueba aceptación de parámetros correctos</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="apirestv1.tests.MessageTestCase.test_rest">
+<code class="descname">test_rest</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#apirestv1.tests.MessageTestCase.test_rest" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Prueba la api rest para Message</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="apirestv1.tests.MessageTestCase.test_unique_constraint">
+<code class="descname">test_unique_constraint</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#apirestv1.tests.MessageTestCase.test_unique_constraint" title="Enlazar permanentemente con esta definición">¶</a></dt>
+<dd><p>Prueba que no permita crear mensajes con ids duplicados</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../index.html" title="capítulo anterior">Welcome to qmsg’s documentation!</a></li>
+      <li>Next: <a href="views.html" title="próximo capítulo">Views</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>Esta página</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/modules/tests.rst.txt"
+            rel="nofollow">Mostrar el código</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Búsqueda rápida</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Ir a" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017, los illuminatis.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/modules/tests.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
