@@ -26,9 +26,10 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = '4xnr-ieh9ewxt12oqytn26gtk4y+v87iogbrcy8%3me^txk#sd'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['qmsg.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['vps-1343917-x.dattaweb.com', 'qmsg.lopezezequiel.com',
+    'localhost']
 
 
 # Application definition
@@ -80,11 +81,11 @@ WSGI_APPLICATION = 'qmsg.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
-    DATABASES = {  
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'postgres',
         'USER': 'postgres',
+        'PASSWORD': 'password',
         'HOST': 'db',
         'PORT': 5432,
     }
