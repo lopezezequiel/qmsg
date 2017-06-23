@@ -13,7 +13,7 @@ from serializers import MessageSerializer
 def index(request):
     """Renderiza la página princial
     """
-    return render(request, 'apirestv1/index.html') 
+    return render(request, 'apirestv1/index.html')
 
 
 @api_view(['POST'])
