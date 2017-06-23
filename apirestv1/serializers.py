@@ -12,7 +12,7 @@ class MessageSerializer(serializers.ModelSerializer):
     """
 
     class Meta:
-        model = Message 
+        model = Message
         fields = (u'id', u'text')
         extra_kwargs = {
             u'id': {u'read_only': True}
