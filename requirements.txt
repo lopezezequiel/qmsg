@@ -1,5 +1,5 @@
 Babel==2.4.0
-Django==1.11.2
+Django==2.2.24
 Jinja2==2.9.6
 MarkupSafe==1.0
 Pygments==2.2.0
